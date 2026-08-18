@@ -1,0 +1,4 @@
+playwright
+Pillow
+faster-whisper
+requests

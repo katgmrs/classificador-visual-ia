@@ -1,0 +1,15 @@
+@"
+.venv/
+__pycache__/
+*.pyc
+
+saida_audio/
+*.tmp
+
+.env
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
+"@ | Set-Content .gitignore

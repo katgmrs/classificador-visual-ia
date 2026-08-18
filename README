@@ -1,0 +1,53 @@
+# Classificador Visual de Aulas Médicas com IA
+
+Sistema de classificação visual de frames de vídeos de aulas médicas utilizando **Ollama + Qwen2.5-VL**.
+
+O projeto analisa imagens extraídas de um vídeo e identifica visualmente o tipo de conteúdo apresentado:
+
+- Professor junto aos slides
+- Somente slides
+- Demonstração prática
+- Conteúdo teórico + demonstração
+- Conteúdo indefinido
+
+O processamento foi desenvolvido para reduzir o número de chamadas à IA através de **agrupamento visual local de frames semelhantes**.
+
+---
+
+## Arquitetura
+
+```text
+Vídeo
+  │
+  ▼
+Extração de frames
+  │
+  ▼
+frames_video/
+  │
+  ▼
+Análise visual local
+  │
+  ├── Frames semelhantes
+  │
+  ▼
+Agrupamento
+  │
+  ▼
+Representantes dos grupos
+  │
+  ▼
+Ollama
+  │
+  ▼
+Qwen2.5-VL
+  │
+  ▼
+Classificação
+  │
+  ▼
+Propagação para frames semelhantes
+  │
+  ▼
+classificacao_visual.json
+documentacao.json
