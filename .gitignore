@@ -1,15 +1,11 @@
-@"
-.venv/
 __pycache__/
-*.pyc
-
-saida_audio/
-*.tmp
-
+*.py[cod]
 .env
-.vscode/
-.idea/
-
-.DS_Store
-Thumbs.db
-"@ | Set-Content .gitignore
+.venv/
+data/
+logs/
+videos/
+saida_audio/
+frames_video/
+.pytest_cache/
+.coverage
