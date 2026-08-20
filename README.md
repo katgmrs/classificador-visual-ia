@@ -31,10 +31,6 @@ python -m playwright install chromium
 python -m uvicorn app:app --host 127.0.0.1 --port 8000
 ```
 
-Acesse `http://127.0.0.1:8000`. A aplicação não utiliza Streamlit.
-
-Depois da instalação inicial, também é possível iniciar com duplo clique em `iniciar_aplicacao.bat`.
-
 ## Conexão com o JW Player
 
 O fluxo começa em `https://dashboard.jwplayer.com/p/XdfUPSCL/media`. A aplicação abre um navegador Chromium controlado e mantém a sessão somente em memória, sem gravar a senha.
